@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro';
+
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(150deg, #e1ebea, #c5cae7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.card{
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 300px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px #0000003b;
+    border-radius: 15px;
+    
+
+}
+.card-number{
+    position: absolute;
+    padding-top: 30px;
+    padding-left: 21px;
+    letter-spacing: 3px;
+    font-size: 20px;
+
+}
+input{
+    padding-left: 20px;
+    background-color: transparent;
+    border: none;
+    width: auto;
+    font: inherit;
+    outline: none;
+    color: #fff;
+}
+input::placeholder{
+    color: #fff;
+}
+.card-inner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+
+}
+.front{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #1b3046, #243352);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.background-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+.card-no{
+    font-size: 35px;
+    margin-top: 60px;
+}
+.card-holder{
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+.name{
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+.card-data-lab{
+    padding-right: 35px;
+}
+.card-data{
+    padding-left: 60px;
+}
